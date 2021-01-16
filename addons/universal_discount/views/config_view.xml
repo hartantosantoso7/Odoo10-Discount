@@ -1,0 +1,30 @@
+<odoo>
+    <record id="custom_setting" model="ir.ui.view">
+        <field name="name">custom_discount</field>
+        <field name="model">account.config.settings</field>
+        <field name="inherit_id" ref="account.view_account_config_settings"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='accounting']" position="inside">
+                <label for="id" string="Discount"/>
+                <div>
+                    <div>
+                        <field name="ks_enable_discount" class="oe_inline" />
+                        <label for="ks_enable_discount"/>
+                        <div>
+                            <label for="ks_purchase_discount_account"/>
+                            <field name="ks_purchase_discount_account" class="oe_inline" attrs="{'required':[('ks_enable_discount', '=', True)]}" />
+                        </div>
+                        <div>
+                            <label for="ks_sales_discount_account"/>
+                            <field name="ks_sales_discount_account" class="oe_inline" attrs="{'required':[('ks_enable_discount', '=', True)]}"/>
+                        </div>
+                        <!-- <field name="ks_purchase_discount_account" class="oe_inline" /> -->
+                        <!-- <field name="module_account_reports" class="oe_inline" widget="upgrade_boolean" on_change="1" modifiers="{}"/>
+				            <label for="module_account_reports"/>				 -->
+                    </div>
+                    <!-- Field Disini -->
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

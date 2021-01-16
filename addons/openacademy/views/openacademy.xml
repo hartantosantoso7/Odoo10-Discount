@@ -2,7 +2,7 @@
     <data>
 
         <!-- Course form view: untuk mengisi data -->
-       <record model="ir.ui.view" id="course_form_view">
+        <record model="ir.ui.view" id="course_form_view">
             <field name="name">course.form</field>
             <field name="model">openacademy.course</field>
             <field name="arch" type="xml">
@@ -78,10 +78,12 @@
                                 <field name="seats"/>
                             </group>
                         </group>
+                        <label for="attendee_ids"/>
+                        <field name="attendee_ids"/>
                     </sheet>
                 </form>
             </field>
-        </record>   
+        </record>
 
         <!-- session Tree/list view -->
         <record model="ir.ui.view" id="session_tree_view">
@@ -128,6 +130,6 @@
         <!-- menuitem session -->
         <menuitem id="session_menu" name="Sessions" parent="openacademy_menu" action="session_list_action"/>
 
-     
+
     </data>
 </odoo>

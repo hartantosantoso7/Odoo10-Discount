@@ -23,7 +23,7 @@
             </field>
         </record>
 
-        <record id="custom_setting" model="ir.ui.view">
+        <!-- <record id="custom_setting" model="ir.ui.view">
             <field name="name">custom_discount</field>
             <field name="model">purchase.config.settings</field>
             <field name="inherit_id" ref="purchase.view_purchase_configuration"/>
@@ -36,6 +36,6 @@
             
 
             
-        </record>
+        </record> -->
     </data>
 </odoo>
