@@ -1,4 +1,4 @@
-<odoo>
+<!-- <odoo>
     <data>
          <record model="openacademy.course" id="course0">
             <field name="name">Course 0</field>
@@ -14,4 +14,4 @@
             <field name="description">Course 2's description</field>
         </record>
     </data>
-</odoo>
+</odoo> -->
